@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="jquery.js"></script>
+    <script src="underscore.js"></script>
+    <script src="keymaster.js"></script>
+    <script src="snake.js"></script>
+    <script src="snake_ui.js"></script>
+    <link rel="stylesheet" href="./snake.css"></link>
+    <title>Insane Snakey Sane</title>
+  </head>
+  
+  <body>
+    <h1>Insane Snakey Sane</h1>
+    <div id="board"></div>
+    <script>
+    $(function() {
+      new SnakeGame.View($("#board")).start();
+    })
+    </script>
+  </body>
+</html>
