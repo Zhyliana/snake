@@ -27,10 +27,9 @@
 }
 
 h1 {
-  margin: 2% 35%;
+  margin: 2% 40%;
   font-family: "Helvetica Neue";
   font-weight: 100;
-  font-size: 12px;
 }
 
 @media window and (max-width: 600px) and (min-width: 600px) {
