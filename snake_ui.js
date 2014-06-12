@@ -41,7 +41,7 @@
     _(board.snake.segments).each(function (seg) {
       cellsMatrix[seg.y][seg.x].addClass("snake");
     });
-    // 
+
     cellsMatrix[board.apple.position.y][board.apple.position.x].addClass("apple");
 
     this.$el.empty();
@@ -57,8 +57,16 @@
       this.board.snake.move();
       this.render();
     } else {
-      alert("You lose!");
+      var points = this.board.snake.segments.length
+      var UI = this;
+      
       window.clearInterval(this.intervalId);
+      
+      $("#board").prepend("<div class=\"modal\"> Game Over<br> Points: " + points + "<br><br><div id=\"subtitle\">Press any key to start new game</div></div>")
+      
+      $("body").keypress(function(){  
+        UI.start();
+      });
     }
   };
 

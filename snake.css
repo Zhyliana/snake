@@ -2,12 +2,26 @@ body {
   background: #49c9af;
 }
 
-h1 {
+h1, h4, .modal {
   font-family: "Helvetica Neue";
   color: #f8f8f8;
   text-align: center;
   font-weight: 400;
+}
+
+h1 {
   font-size: 65px;
+}
+
+.modal {
+  font-size: 40px;
+  color: #357ebd;
+  position: absolute;
+  margin:  150px 100px;
+}
+
+#subtitle {
+  font-size: 20px;
 }
 
 .cell {
